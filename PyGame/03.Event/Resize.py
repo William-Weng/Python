@@ -1,12 +1,11 @@
 #-*- coding: UTF-8 -*-
 
-backgroundImage = './images/python.png'
-
 import pygame
 from pygame.locals import *
 from sys import exit
 
 pygame.init()
+backgroundImage = './images/python.png'
 screenSize = (640, 480)
 screen = pygame.display.set_mode(screenSize, RESIZABLE, 32)
 background = pygame.image.load(backgroundImage).convert()

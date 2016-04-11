@@ -1,12 +1,11 @@
 #-*- coding: UTF-8 -*-
 
-backgroundImage = './images/python.png'
-
 import pygame
 from pygame.locals import *
 from sys import exit
 
 pygame.init()
+backgroundImage = './images/python.png'
 screenSize = pygame.display.list_modes() # 取得所有解析度的list
 screen = pygame.display.set_mode(screenSize[5], NOFRAME, 32) # 取第5個解析度來用
 background = pygame.image.load(backgroundImage).convert()
