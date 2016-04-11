@@ -14,7 +14,7 @@ while (isRunning):
 
     # 如果按下視窗右上角的[X]就不玩了
     for event in pygame.event.get():
-        if (event.type == pygame.QUIT):  # pygame.QUIT = 12
+        if event.type == pygame.QUIT:  # pygame.QUIT = 12
             isRunning = False
 
     # 設定畫面上的點位置(x,y)
