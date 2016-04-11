@@ -1,10 +1,12 @@
+#-*- coding: UTF-8 -*-
+
 import pygame
 from sys import exit
 from pygame.locals import *
 
 pygame.init()
 
-screen = pygame.display.set_mode((640, 453), 0, 32)  # 設定畫面大小
+screen = pygame.display.set_mode((640, 453), RESIZABLE, 32)  # 設定畫面大小／可以改變視窗大小／顏色32bits
 pygame.display.set_caption('Python-Pygame')  # 設定標題
 
 bgPic = pygame.image.load('./images/python.png').convert()  # 載入背景圖
