@@ -7,8 +7,8 @@ from pygame.locals import *
 from sys import exit
 
 pygame.init()
-ScreenSize = pygame.display.list_modes() # 取得所有解析度的list
-screen = pygame.display.set_mode(ScreenSize[5], NOFRAME, 32) # 取第5個解析度來用
+screenSize = pygame.display.list_modes() # 取得所有解析度的list
+screen = pygame.display.set_mode(screenSize[5], NOFRAME, 32) # 取第5個解析度來用
 background = pygame.image.load(backgroundImage).convert()
 
 x, y = 0, 0
@@ -21,7 +21,6 @@ while True:
     for event in pygame.event.get():
         if event.type == QUIT:
             exit()
-
         if event.type == KEYDOWN:  # 按下鍵盤時…
 
             if event.key == K_LEFT:  # 按←的話，就往左邊移動一格
@@ -35,7 +34,7 @@ while True:
             elif event.key == K_q and KMOD_CTRL & mods:  # 按下CTRL+Q就離開
                 exit()
             elif event.key == K_f and KMOD_CTRL & mods:  # 按下CTRL+F就切換全螢幕
-                screen = pygame.display.set_mode(ScreenSize[5 if isFullScreen else 0], 0 if isFullScreen else FULLSCREEN, 32)
+                screen = pygame.display.set_mode(screenSize[5 if isFullScreen else 0], 0 if isFullScreen else FULLSCREEN, 32)
                 isFullScreen = not isFullScreen
 
         elif event.type == KEYUP:  # 放開了鍵盤，圖就不要動了
