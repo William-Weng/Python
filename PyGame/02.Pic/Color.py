@@ -4,7 +4,7 @@ import pygame
 
 pygame.init()
 
-allColors = pygame.Surface((4096, 4096), depth=24)  # 4096 * 4096 * 24bits
+allColors = pygame.Surface((4096, 4096), depth=24)  # 4096 * 4096 * 24bits 的白紙 ==> bland_alpha_surface = pygame.Surface((256, 256), flags=SRCALPHA, depth=32)
 
 for r in range(256):  # rgb ==> (0,0,0) ~ (255,255,255)
     print(r + 1, "out of 256")
