@@ -15,7 +15,7 @@ myFontEn = pygame.font.SysFont("arial", 64) # 取得系統字型
 myFontCht = pygame.font.SysFont("kaiu.ttf", 64) # Windows 標楷體
 myFontJp = pygame.font.Font("./fonts/kaiu.ttf", 64) # 取得外部字型 ==> Windows 標楷體
 
-nameSurfaceEn = myFontEn.render(myNameEn, True, (0, 0, 0)) # 產生文字輸出
+nameSurfaceEn = myFontEn.render(myNameEn, True, (0, 0, 0)) # 產生文字輸出 ==> 字體設定，反鋸齒，字體黑色，背景透明
 nameSurfaceCht = myFontJp.render(myNameCht, True, (0, 0, 0), (255, 255, 0))
 nameSurfaceJp = myFontJp.render(myNameJp, True, (0, 0, 0), (0, 255, 255))
 
