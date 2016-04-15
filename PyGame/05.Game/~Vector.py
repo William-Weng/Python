@@ -6,7 +6,7 @@ sprite_image_filename = './images/fugu.png'
 import pygame
 from pygame.locals import *
 from sys import exit
-from gameobjects import vector2
+from classes.gameobjects import vector2
 
 pygame.init()
 screen = pygame.display.set_mode((640, 480), 0, 32)

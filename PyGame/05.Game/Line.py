@@ -10,6 +10,7 @@ from math import pi
 pygame.init()
 screen = pygame.display.set_mode((640, 480), 0, 32)
 points = []
+screen.fill((255, 255, 255))
 
 while True:
 
