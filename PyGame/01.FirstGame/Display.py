@@ -8,8 +8,6 @@ screen = pygame.display.set_mode((640, 480))  # 設定畫面大小
 clock = pygame.time.Clock()  # 做一個計時器
 isRunning = True
 
-print(sys.path)
-
 pygame.display.set_caption("我的PyGame第一支程式")  # 設定視窗標題
 
 while (isRunning):
